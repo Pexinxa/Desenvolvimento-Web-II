@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url('imagens/pizza.jpg') no-repeat left center; 
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px;
+    gap: 40px;
+}
+
+section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    color: #d32f2f; 
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #e67e22; 
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #e74c3c; 
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #c0392b;
+}
+
+.resumo {
+    background: #ffe5b4; 
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 10%;
+}
+
+.resumo u {
+    font-weight: bold;
+    color: #d35400;
+}

@@ -39,22 +39,27 @@ $email_cookie = isset($_COOKIE['email_usuario']) ? $_COOKIE['email_usuario'] : "
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Tela de Login</h2>
+    <div class="container">
+        <h2>Tela de Login</h2>
 
-    <form method="post">
-        <label>E-mail:</label><br>
-        <input type="email" name="email" value="<?= htmlspecialchars($email_cookie) ?>" required><br><br>
+        <?php if (!empty($mensagem)) : ?>
+            <p class="mensagem-erro"><?= $mensagem ?></p>
+        <?php endif; ?>
 
-        <label>Senha:</label><br>
-        <input type="password" name="senha" required><br><br>
+        <form method="post">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" value="<?= htmlspecialchars($email_cookie) ?>" placeholder="Digite seu e-mail" required>
 
-        <button type="submit">Entrar</button>
-    </form>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
 
-    <p style="color:red;"><?= $mensagem ?></p>
+            <button type="submit">Entrar</button>
+        </form>
 
-    <p>Não tem conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
+        <p>Não tem conta? <a href="cadastro.php">Cadastre-se aqui</a></p>
+    </div>
 </body>
 </html>

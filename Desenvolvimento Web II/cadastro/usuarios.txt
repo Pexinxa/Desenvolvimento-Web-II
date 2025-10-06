@@ -1,2 +1,0 @@
-Pedro|pedro@gmail.com|123456
-Davi|davi@gmail.com|abc123

@@ -43,14 +43,14 @@ $itens = $stmt->fetchAll();
     </div>
 
     <div class="confirmacao-mensagem">
-        <p>🎉 <strong>Obrigado, <?= esc($pedido['cliente_nome']) ?>!</strong></p>
+        <p> <strong>Obrigado, <?= esc($pedido['cliente_nome']) ?>!</strong></p>
         <p>Seu pedido foi recebido e está sendo preparado com todo carinho.</p>
         <p>Você receberá atualizações sobre o status do seu pedido.</p>
     </div>
 
     <div class="confirmacao-grid">
         <div class="confirmacao-detalhes">
-            <h2>📦 Detalhes do Pedido</h2>
+            <h2> Detalhes do Pedido</h2>
             
             <div class="itens-lista">
                 <?php foreach($itens as $item): ?>
@@ -81,23 +81,23 @@ $itens = $stmt->fetchAll();
 
             <?php if($pedido['observacoes']): ?>
                 <div class="info-card">
-                    <h3>📝 Observações</h3>
+                    <h3>Observações</h3>
                     <p><?= nl2br(esc($pedido['observacoes'])) ?></p>
                 </div>
             <?php endif; ?>
 
             <div class="info-card">
-                <h3>⏱️ Tempo Estimado</h3>
+                <h3> Tempo Estimado</h3>
                 <p class="tempo-destaque">30-45 minutos</p>
             </div>
 
             <div class="info-card">
-                <h3>💳 Pagamento</h3>
+                <h3>Pagamento</h3>
                 <p>Na entrega (dinheiro ou cartão)</p>
             </div>
 
             <div class="info-card status-card">
-                <h3>📊 Status Atual</h3>
+                <h3>Status Atual</h3>
                 <div class="status-badge badge-pendente">
                     Pedido Recebido
                 </div>
@@ -108,18 +108,18 @@ $itens = $stmt->fetchAll();
 
     <div class="confirmacao-acoes">
         <a href="<?= url('pedido_detalhes.php?id=' . $pedido['id']) ?>" class="btn">
-            📋 Ver Detalhes Completos
+             Ver Detalhes Completos
         </a>
         <a href="<?= url('meus_pedidos.php') ?>" class="btn-secondary">
-            📦 Ver Todos os Meus Pedidos
+            Ver Todos os Meus Pedidos
         </a>
         <a href="<?= url('services.php') ?>" class="btn-secondary">
-            🍽️ Fazer Outro Pedido
+          Fazer Outro Pedido
         </a>
     </div>
 
     <div class="proximos-passos">
-        <h2>📱 Próximos Passos</h2>
+        <h2> Próximos Passos</h2>
         <div class="passos-grid">
             <div class="passo">
                 <span class="passo-numero">1</span>
